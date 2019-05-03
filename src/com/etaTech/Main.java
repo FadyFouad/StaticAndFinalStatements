@@ -25,5 +25,10 @@ public class Main {
         password.storePass();
         password.logIn(123456);
         password.logIn(23456);
+
+        StaticBlockTest blockTest = new StaticBlockTest();
+        blockTest.myMethod();
+        System.out.println("OWNER -> " +StaticBlockTest.owner);
+
     }
 }
